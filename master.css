@@ -1,0 +1,96 @@
+#logo img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin:auto;
+  display:block
+}
+
+
+input[type=text], select {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+     text-align: center;
+}
+
+input[type=checkbox], value {
+  color: white;
+}
+
+
+h1,h2,h3 {
+  color: white;
+  font-family: "Champion Welterweight","Archivo Black","Arial Black","Arial Bold","Gadget",sans-serif;
+  text-align: center;
+}
+
+#content {
+  width: 550px;
+  height: 450px;
+  margin: auto;
+  position: relative;
+}
+
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+button[type=submit] {
+  width: 100%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+button {
+    display: flex;
+    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 100%;
+    margin-top: .9375rem;
+    margin-bottom: .9375rem;
+    border: none;
+    border-radius: 0;
+    outline-style: solid;
+    padding: .51816rem 2px;
+    font-family: "Archivo Narrow","Arial Narrow","Arial",sans-serif;
+    font-size: .93269rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    outline-color: white;
+    background-color: black;
+    color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+p{
+  font-family: sans-serif;
+}
+form{
+font-family: sans-serif;
+text-align: center;
+}
