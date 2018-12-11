@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h2>Events for Football</h2>
+  <h3>What would you like to add?</h3>
+  <form action="indexSubscription.html">
+
+    <input type="checkbox" id="tailgate" onclick="myFunctionTailgate()"> Tailgate 12/15/18 5pm<br>
+  	<input type="checkbox" id="game" onclick="myFunctionGame()"> IU vs. Purdue 12/15/18 7pm<br>
+    <input type="checkbox" id="game2" onclick="myFunctionGame2()"> UIUC vs. Purdue 01/08/18 7pm<br>
+    <input type="checkbox" id="game3" onclick="myFunctionGame3()"> OSU vs. Purdue 01/21/18 7pm<br>
+
+    <p id="text" style="display:none">Tailgate 12/15/18 5pm</p>
+    <p id="text2" style="display:none">IU vs. Purdue 12/15/18 7pm</p>
+    <p id="text3" style="display:none">UIUC vs. Purdue 01/08/18 7pm</p>
+    <p id="text4" style="display:none">OSU vs. Purdue 01/21/18 7pm</p>
+
+    <button type="submit">Back to Athletic Subscriptions</button>
+
+
+    <button formaction="allevents.html">See all your events</button>
+
+    <script>
+    function myFunctionTailgate() {
+      var checkBox = document.getElementById("tailgate");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame() {
+      var checkBox = document.getElementById("game");
+      var text = document.getElementById("text2");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame2() {
+      var checkBox = document.getElementById("game2");
+      var text = document.getElementById("text3");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame3() {
+      var checkBox = document.getElementById("game3");
+      var text = document.getElementById("text4");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+     </script>
+  </form>
+</body>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h2>Events for Swim</h2>
+  <h3>What would you like to add?</h3>
+  <form action="indexSubscription.html">
+
+    <input type="checkbox" id="meeting" onclick="myFunctionMeeting()"> Meeting with Team 12/07/18 11am<br>
+  	<input type="checkbox" id="practice" onclick="myFunctionPractice()"> Practice 12/09/18 5pm<br>
+    <input type="checkbox" id="game" onclick="myFunctionGame()"> Game 12/20/18 4pm<br>
+    <input type="checkbox" id="practice1" onclick="myFunctionPractice2()"> Practice 01/01/19 2pm<br>
+
+    <p id="text" style="display:none">Meeting with Team 12/07/18 11am</p>
+    <p id="text1" style="display:none">Practice 12/09/18 5pm</p>
+    <p id="text2" style="display:none">Game 12/20/18 4pm</p>
+    <p id="text3" style="display:none">Practice 01/01/19 2pm</p>
+
+    <button type="submit">Back to Athletic Subscriptions</button>
+
+    <button formaction="allevents.html">See all your events</button>
+
+    <script>
+    function myFunctionMeeting() {
+      var checkBox = document.getElementById("meeting");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionPractice() {
+      var checkBox = document.getElementById("practice");
+      var text = document.getElementById("text1");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame() {
+      var checkBox = document.getElementById("game");
+      var text = document.getElementById("text2");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionPractice2() {
+      var checkBox = document.getElementById("practice1");
+      var text = document.getElementById("text3");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    </script>
+
+  </form>
+</body>

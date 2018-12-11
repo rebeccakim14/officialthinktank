@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="css/master.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h2>Events for Golf</h2>
+  <h3>What would you like to add?</h3>
+  <form action="indexSubscription.html">
+
+    <input type="checkbox" id="tea" onclick="myFunctionTea()"> Tea 03/18/28 12pm<br>
+  	<input type="checkbox" id="game" onclick="myFunctionGame()"> Game 02/14/18 4pm<br>
+    <input type="checkbox" id="game1" onclick="myFunctionGame2()"> Game 02/21/18 5pm<br>
+    <input type="checkbox" id="tournament" onclick="myFunctionTournament()"> Tournament 04/05/18 2pm<br>
+
+    <p id="text" style="display:none">Tea 03/18/28 12pm</p>
+    <p id="text1" style="display:none">Game 02/14/18 4pm</p>
+    <p id="text2" style="display:none">Game 02/21/18 5pm</p>
+    <p id="text3" style="display:none">Tournament 04/05/18 2pm</p>
+
+    <button type="submit">Back to Athletic Subscriptions</button>
+
+    <button formaction="allevents.html">See all your events</button>
+
+    <script>
+
+    function myFunctionTea() {
+      var checkBox = document.getElementById("tea");
+      var text = document.getElementById("text");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame() {
+      var checkBox = document.getElementById("game");
+      var text = document.getElementById("text1");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionGame2() {
+      var checkBox = document.getElementById("game1");
+      var text = document.getElementById("text2");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    function myFunctionTournament() {
+      var checkBox = document.getElementById("tournament");
+      var text = document.getElementById("text3");
+      if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+    }
+
+    </script>
+
+</body>
